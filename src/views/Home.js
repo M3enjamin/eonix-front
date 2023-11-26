@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
+import "./Home.css";
 
-function Home({
-  onIncrement,
-  counter,
-}) {
+function Home({ onIncrement, onDecrement, counter }) {
   return (
-    <div>
-      <button>
-        Vous avez cliqué {counter} fois
-      </button>
+    <div className="wrapper">
+      <span className="counter">{counter}</span>
+      <div className="buttons">
+        <button onClick={onDecrement}>&#8722;</button>
+        <button onClick={onIncrement}>&#43;</button>
+      </div>
     </div>
   );
-};
+}
 
 export default Home;
