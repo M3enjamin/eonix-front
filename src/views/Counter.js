@@ -1,7 +1,7 @@
 import React from "react";
-import "./Home.css";
+import "./Counter.css";
 
-function Home({ onIncrement, onDecrement, counter }) {
+function Counter({ onIncrement, onDecrement, counter }) {
   return (
     <div className="wrapper">
       <span className="counter">{counter}</span>
@@ -13,4 +13,4 @@ function Home({ onIncrement, onDecrement, counter }) {
   );
 }
 
-export default Home;
+export default Counter;
