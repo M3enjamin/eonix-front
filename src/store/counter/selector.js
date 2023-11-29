@@ -1,9 +1,9 @@
-import { createSelector } from 'reselect';
-import { initialState } from './reducer';
+import { createSelector } from "reselect";
+import { initialState } from "./reducer";
 
-const selectHomeContainerDomain = state => state.counterContainer || initialState;
-const makeSelectHomeContainerCounter = () => createSelector(selectHomeContainerDomain, substate => substate.counter);
+const selectCounterContainerDomain = (state) =>
+  state.counterContainer || initialState;
+const makeSelectCounter = () =>
+  createSelector(selectCounterContainerDomain, (substate) => substate.counter);
 
-export {
-  makeSelectHomeContainerCounter,
-};
+export { makeSelectCounter };

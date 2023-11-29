@@ -4,7 +4,7 @@ import { compose } from "redux";
 import { createStructuredSelector } from "reselect";
 
 import { decrementAction, incrementAction } from "../../store/counter/action";
-import { makeSelectHomeContainerCounter as makeSelectCounter } from "../../store/counter/selector";
+import { makeSelectCounter } from "../../store/counter/selector";
 import { useInjectReducer } from "../../utils/injectReducer";
 
 import reducer from "../../store/counter/reducer";
